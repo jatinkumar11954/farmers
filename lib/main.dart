@@ -1,9 +1,10 @@
+import 'package:carigari_admin/Interface/AddCategory.dart';
+import 'package:carigari_admin/Interface/EditScreen.dart';
+import 'package:carigari_admin/Interface/HomeScreen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import './variables.dart' as global;
-import './HomeScreen.dart';
-import './AddCategory.dart';
-import './EditScreen.dart';
+
+import 'info/select.dart';
 
 void main() => runApp(MyApp());
 
@@ -13,16 +14,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Carigari Admin',
+      title: 'Literating Village',
       theme: ThemeData(
-        primarySwatch: Colors.brown,
+        primarySwatch: Colors.green,
       ),
-      home: HomeScreen(title: 'Carigari Admin Page'),
+      home: HomeScreen(title: 'Literating Village'),
       routes: <String,WidgetBuilder>
       {
         'HomeScreen':(BuildContext context)=> new HomeScreen(),
         'AddCategory':(BuildContext context)=> new AddCategory(),
         'EditScreen':(BuildContext context)=> new EditCategory(),
+        'selectscreen':(BuildContext context)=> new Selectscreen(),
       },
     );
   }
