@@ -1,12 +1,21 @@
+import 'package:carigari_admin/Data/contactForm.dart';
+import 'package:carigari_admin/Data/help.dart';
+import 'package:carigari_admin/Data/privacy.dart';
+import 'package:carigari_admin/Info/Info/InfoSelect.dart';
+import 'package:carigari_admin/Info/Info/RevenueArea.dart';
+import 'package:carigari_admin/Info/Info/officersInfo.dart';
+import 'package:carigari_admin/Info/Info/pop.dart';
+import 'package:carigari_admin/Info/SelectInfo.dart';
 import 'package:carigari_admin/Interface/AddCategory.dart';
-import 'package:carigari_admin/Interface/EditScreen.dart';
+// import 'package:carigari_admin/Interface/EditScreen.dart';
 import 'package:carigari_admin/Interface/HomeScreen.dart';
+import 'package:carigari_admin/Interface/Productsdetails.dart';
+import 'package:carigari_admin/selectScreen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-
-import 'info/sceme.dart';
-import 'info/select.dart';
-
+import './Data/about.dart';
+import 'Info/schemes/scheme.dart';
+import 'Info/schemes/schemescreen.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -19,14 +28,27 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: HomeScreen(title: 'Literating Village'),
+      home: SelectFirstscreen(),
+      // HomeScreen(title: 'Literating Village'),
       routes: <String,WidgetBuilder>
       {
-        'HomeScreen':(BuildContext context)=> new HomeScreen(),
+        'InterfaceHomeScreen':(BuildContext context)=> new HomeScreen(),
         'AddCategory':(BuildContext context)=> new AddCategory(),
-        'EditScreen':(BuildContext context)=> new EditCategory(),
-        'selectscreen':(BuildContext context)=> new Selectscreen(),
-        'scheme':(BuildContext context)=> new Scheme(),
+        // 'EditScreen':(BuildContext context)=> new EditCategory(),
+        'AboutScreen':(BuildContext context)=> new About(),
+        'InfoSelectScreen':(BuildContext context)=> new SelectInfoscreen(),
+        'TopFirstScreen':(BuildContext context)=> new SelectFirstscreen(),
+        'Schemescreen':(BuildContext context)=> new Schemescreen(),
+        'Scheme':(BuildContext context)=> new Scheme(),
+        'PopScreen':(BuildContext context)=> new Pop(),
+        'HelpScreen':(BuildContext context)=> new Help(),
+        'ContactScreen':(BuildContext context)=> new ContactForm(),
+        'SubCategory':(BuildContext context)=> new SubCategory(),
+        'InfoSelect':(BuildContext context)=> new Village(),
+        'RevArea':(BuildContext context)=> new RevArea(),
+        'Privacy':(BuildContext context)=> new Privacy(),
+        'OfficersInfo':(BuildContext context)=> new OfficersInfo(),
+        
       },
     );
   }

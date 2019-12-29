@@ -1,4 +1,5 @@
 import 'dart:io';
+import '../Arrangements/drawer.dart';
 import 'package:carigari_admin/Arrangements/variables.dart' as global;
 import 'package:carigari_admin/Arrangements/Size.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -33,10 +34,17 @@ class _HomeScreenState extends State<HomeScreen> {
     QuerySnapshot qp;
     qp = await Firestore.instance.collection("farmers").getDocuments();
     global.category.isEmpty ? global.category.addAll(qp.documents) : null;
-    // print(global.category[0].data['a']);
+    // QuerySnapshot qpp;
+    // qpp= await Firestore.instance.collection("schemes").getDocuments();
+    // print("before");
+    // global.schemes.isEmpty ? global.schemes.addAll(qpp.documents) : null;
+    
+    // print(global.schemes[0].data['sample']);
+    //  print("after");
     setState(() {
       isLoading = false;
     });
+    
   }
 
   @override
@@ -69,7 +77,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   //   ctxt,
                   //   new MaterialPageRoute(builder: (ctxt) => new Privacy()),
                   // );
-                  Navigator.pushNamed(context, "HomeScreen");
+                  Navigator.pushNamed(context, "InfoHomeScreen");
                   // Navigator.pop(context);
                 },
               ),
@@ -91,16 +99,17 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: Text("Farmers And Buyers Interface"),
       ),
+      drawer:theDrawer(context),
       body: WillPopScope(
         onWillPop: () {
-          // Navigator.pushNamed(context,''),
-          show();
+          Navigator.pushNamed(context,'TopFirstScreen');
+          // show();
         },
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text("\nList Of Category/Products:-\n"),
+              Text("\nLIST OF PRODUCTS :-\n"),
               Divider(
                 color: Colors.deepOrangeAccent,
                 height: 5.0,
@@ -132,7 +141,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     : global.category[index].data['name'],
                                 style: TextStyle(
                                   color: Colors.black,
-                                  fontWeight: FontWeight.w600,
+                                  fontWeight: FontWeight.w800,
                                   // fontSize: SizeConfig.blockSizeVertical * 2.9,
                                 )),
                             subtitle: Text("Price Starts from ₹ " +
@@ -140,25 +149,27 @@ class _HomeScreenState extends State<HomeScreen> {
                                     null
                                 ? "Not yet"
                                 : "Price Starts from  ₹ " +
-                                    global.category[index].data['price']),
-                            // dense: true,
-                            // onTap: () {
-                            //   // Navigator.pushNamed(context,"ContactUs");
-                            //   // Navigator.pushNamed(context, "SubCategory");
-                            //   // SubCategory(index);
+                                    global.category[index].data['price']+" per Quintal",style: TextStyle(fontWeight: FontWeight.w500,color: Colors.black),),
+                            dense: true,
+                            onTap: () {
+                              print("clcick");
+                              // Navigator.pushNamed(context,"ContactUs");
+                              // Navigator.pushNamed(context, "SubCategory");
+                              // SubCategory(index);
 
-                            //   //jp
-                            //   // global.TempIndex = index;
-                            //   global.store =
-                            //       global.category[global.TempIndex].data['a'];
-                            //   // Navigator.pushNamed(context, "EditScreen");
-                            //   //jp
-                            //   print("clicked for " + global.store);
-                            //   callSnackBar("clicked ");
-                            //   // print("clicked" +
-                            //   //     global.category[index].data['a'] +
-                            //   //     global.TempIndex.toString());
-                            // },
+                              //jp
+                              global.TempIndex = index;
+                              // global.store =
+                              //     global.category[global.TempIndex].data['a'];
+                              // Navigator.pushNamed(context, "EditScreen");
+                              //jp
+                              // print("clicked for " + global.store);
+                              Navigator.pushNamed(context, "SubCategory");
+                              // callSnackBar("clicked ");
+                              // print("clicked" +
+                              //     global.category[index].data['a'] +
+                              //     global.TempIndex.toString());
+                            },
                           ));
                         },
                       ),
@@ -175,7 +186,7 @@ class _HomeScreenState extends State<HomeScreen> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           // AddCategory();
-          Navigator.pushNamed(context, "selectscreen");
+          Navigator.pushNamed(context, "AddCategory");
         },
         tooltip: 'Increment',
         child: Icon(Icons.add),
