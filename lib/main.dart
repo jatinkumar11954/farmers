@@ -4,6 +4,7 @@ import 'package:carigari_admin/Interface/HomeScreen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
+import 'info/sceme.dart';
 import 'info/select.dart';
 
 void main() => runApp(MyApp());
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         'AddCategory':(BuildContext context)=> new AddCategory(),
         'EditScreen':(BuildContext context)=> new EditCategory(),
         'selectscreen':(BuildContext context)=> new Selectscreen(),
+        'scheme':(BuildContext context)=> new Scheme(),
       },
     );
   }

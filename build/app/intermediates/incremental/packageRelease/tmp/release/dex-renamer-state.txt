@@ -1,0 +1,4 @@
+#Sat Dec 28 12:09:40 IST 2019
+base.0=D\:\\pro\\Literating-village\\build\\app\\intermediates\\transforms\\r8\\release\\0\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

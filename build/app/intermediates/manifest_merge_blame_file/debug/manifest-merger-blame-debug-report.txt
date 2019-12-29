@@ -1,7 +1,7 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.example.carigari_admin"
-4    android:versionCode="1"
+4    android:versionCode="2"
 5    android:versionName="1.0.0" >
 6
 7    <uses-sdk
@@ -12,8 +12,8 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->D:\pro\Literating-village\android\app\src\debug\AndroidManifest.xml:6:5-66
-14-->D:\pro\Literating-village\android\app\src\debug\AndroidManifest.xml:6:22-64
+14-->D:\pro\clone\farmers\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->D:\pro\clone\farmers\android\app\src\debug\AndroidManifest.xml:6:22-64
 15    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 16    <!-- <uses-sdk android:minSdkVersion="14" /> -->
 17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -27,39 +27,39 @@
 23         FlutterApplication and put your custom class here.
 24    -->
 25    <application
-25-->D:\pro\Literating-village\android\app\src\main\AndroidManifest.xml:8:5-29:19
+25-->D:\pro\clone\farmers\android\app\src\main\AndroidManifest.xml:8:5-29:19
 26        android:name="io.flutter.app.FlutterApplication"
-26-->D:\pro\Literating-village\android\app\src\main\AndroidManifest.xml:9:9-57
+26-->D:\pro\clone\farmers\android\app\src\main\AndroidManifest.xml:9:9-57
 27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 27-->[androidx.core:core:1.0.0] C:\Users\maginificient\.gradle\caches\transforms-2\files-2.1\c1da7862c7abb8e426855a3f78caf221\core-1.0.0\AndroidManifest.xml:22:18-86
 28        android:debuggable="true"
 29        android:icon="@mipmap/ic_launcher"
-29-->D:\pro\Literating-village\android\app\src\main\AndroidManifest.xml:11:9-43
+29-->D:\pro\clone\farmers\android\app\src\main\AndroidManifest.xml:11:9-43
 30        android:label="Literating village" >
-30-->D:\pro\Literating-village\android\app\src\main\AndroidManifest.xml:10:9-43
+30-->D:\pro\clone\farmers\android\app\src\main\AndroidManifest.xml:10:9-43
 31        <activity
-31-->D:\pro\Literating-village\android\app\src\main\AndroidManifest.xml:12:9-23:20
+31-->D:\pro\clone\farmers\android\app\src\main\AndroidManifest.xml:12:9-23:20
 32            android:name="com.example.carigari_admin.MainActivity"
-32-->D:\pro\Literating-village\android\app\src\main\AndroidManifest.xml:13:13-41
+32-->D:\pro\clone\farmers\android\app\src\main\AndroidManifest.xml:13:13-41
 33            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-33-->D:\pro\Literating-village\android\app\src\main\AndroidManifest.xml:16:13-163
+33-->D:\pro\clone\farmers\android\app\src\main\AndroidManifest.xml:16:13-163
 34            android:hardwareAccelerated="true"
-34-->D:\pro\Literating-village\android\app\src\main\AndroidManifest.xml:17:13-47
+34-->D:\pro\clone\farmers\android\app\src\main\AndroidManifest.xml:17:13-47
 35            android:launchMode="singleTop"
-35-->D:\pro\Literating-village\android\app\src\main\AndroidManifest.xml:14:13-43
+35-->D:\pro\clone\farmers\android\app\src\main\AndroidManifest.xml:14:13-43
 36            android:theme="@style/LaunchTheme"
-36-->D:\pro\Literating-village\android\app\src\main\AndroidManifest.xml:15:13-47
+36-->D:\pro\clone\farmers\android\app\src\main\AndroidManifest.xml:15:13-47
 37            android:windowSoftInputMode="adjustResize" >
-37-->D:\pro\Literating-village\android\app\src\main\AndroidManifest.xml:18:13-55
+37-->D:\pro\clone\farmers\android\app\src\main\AndroidManifest.xml:18:13-55
 38            <intent-filter>
-38-->D:\pro\Literating-village\android\app\src\main\AndroidManifest.xml:19:13-22:29
+38-->D:\pro\clone\farmers\android\app\src\main\AndroidManifest.xml:19:13-22:29
 39                <action android:name="android.intent.action.MAIN" />
-39-->D:\pro\Literating-village\android\app\src\main\AndroidManifest.xml:20:17-68
-39-->D:\pro\Literating-village\android\app\src\main\AndroidManifest.xml:20:25-66
+39-->D:\pro\clone\farmers\android\app\src\main\AndroidManifest.xml:20:17-68
+39-->D:\pro\clone\farmers\android\app\src\main\AndroidManifest.xml:20:25-66
 40
 41                <category android:name="android.intent.category.LAUNCHER" />
-41-->D:\pro\Literating-village\android\app\src\main\AndroidManifest.xml:21:17-76
-41-->D:\pro\Literating-village\android\app\src\main\AndroidManifest.xml:21:27-74
+41-->D:\pro\clone\farmers\android\app\src\main\AndroidManifest.xml:21:17-76
+41-->D:\pro\clone\farmers\android\app\src\main\AndroidManifest.xml:21:27-74
 42            </intent-filter>
 43        </activity>
 44        <!--
@@ -67,32 +67,32 @@
 46             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 47        -->
 48        <meta-data
-48-->D:\pro\Literating-village\android\app\src\main\AndroidManifest.xml:26:9-28:33
+48-->D:\pro\clone\farmers\android\app\src\main\AndroidManifest.xml:26:9-28:33
 49            android:name="flutterEmbedding"
-49-->D:\pro\Literating-village\android\app\src\main\AndroidManifest.xml:27:13-44
+49-->D:\pro\clone\farmers\android\app\src\main\AndroidManifest.xml:27:13-44
 50            android:value="2" />
-50-->D:\pro\Literating-village\android\app\src\main\AndroidManifest.xml:28:13-30
+50-->D:\pro\clone\farmers\android\app\src\main\AndroidManifest.xml:28:13-30
 51
 52        <service
-52-->[:cloud_firestore] D:\pro\Literating-village\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+52-->[:cloud_firestore] D:\pro\clone\farmers\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
 53            android:name="com.google.firebase.components.ComponentDiscoveryService"
-53-->[:cloud_firestore] D:\pro\Literating-village\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+53-->[:cloud_firestore] D:\pro\clone\farmers\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
 54            android:directBootAware="true"
 54-->[com.google.firebase:firebase-common:19.3.0] C:\Users\maginificient\.gradle\caches\transforms-2\files-2.1\fe778566e84861575b9c0ea267ebeff3\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
 55            android:exported="false" >
 55-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\maginificient\.gradle\caches\transforms-2\files-2.1\f073b1bdd575868edbf5af4bc1c823d7\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:19:13-37
 56            <meta-data
-56-->[:cloud_firestore] D:\pro\Literating-village\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+56-->[:cloud_firestore] D:\pro\clone\farmers\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 57                android:name="com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar"
-57-->[:cloud_firestore] D:\pro\Literating-village\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-133
+57-->[:cloud_firestore] D:\pro\clone\farmers\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-133
 58                android:value="com.google.firebase.components.ComponentRegistrar" />
-58-->[:cloud_firestore] D:\pro\Literating-village\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+58-->[:cloud_firestore] D:\pro\clone\farmers\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 59            <meta-data
-59-->[:firebase_core] D:\pro\Literating-village\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+59-->[:firebase_core] D:\pro\clone\farmers\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 60                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
-60-->[:firebase_core] D:\pro\Literating-village\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-123
+60-->[:firebase_core] D:\pro\clone\farmers\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-123
 61                android:value="com.google.firebase.components.ComponentRegistrar" />
-61-->[:firebase_core] D:\pro\Literating-village\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+61-->[:firebase_core] D:\pro\clone\farmers\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 62            <meta-data
 62-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\maginificient\.gradle\caches\transforms-2\files-2.1\f073b1bdd575868edbf5af4bc1c823d7\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:20:13-22:85
 63                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"

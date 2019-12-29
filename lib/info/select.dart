@@ -32,10 +32,10 @@ class Selectscreen extends StatelessWidget {
                   footer: GestureDetector(
                        onTap: () {
                       
-                      // Navigator.of(context).pushNamed(
-                      //   // ProductDetailScreen.routeName,
-                      //   // arguments: id,
-                      // );
+                     
+                        // ProductDetailScreen.routeName,
+                        Navigator.pushNamed(context,"scheme");
+                     
                     },
                                       child: Container(
                       height: MediaQuery.of(context).size.height* 0.10,
